@@ -1,0 +1,25 @@
+# Human-Robot Interaction Scenario Scene
+
+This Unity scene demonstrates a human-robot interaction scenario with:
+
+## Scene Components:
+- Robot model with basic navigation capabilities
+- Human avatar with interaction zones
+- Environment with obstacles and interaction points
+- UI elements for monitoring robot state
+
+## Key Features:
+- Realistic lighting and shadows
+- Physics-based object interactions
+- Navmesh for pathfinding
+- Animation controller for robot movement
+
+## Interaction Points:
+- Control panel for robot commands
+- Virtual buttons for triggering actions
+- Touch-sensitive areas for direct interaction
+
+## Technical Details:
+- Target platform: WebGL
+- Rendering pipeline: Universal Render Pipeline (URP)
+- Physics: Unity Physics engine

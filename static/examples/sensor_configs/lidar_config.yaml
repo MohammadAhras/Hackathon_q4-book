@@ -1,0 +1,30 @@
+# LiDAR Configuration Example
+
+## Sensor Specifications
+- Type: Ray-based (LiDAR)
+- Range: 0.1m to 30m
+- Horizontal FOV: 360° (2π radians)
+- Vertical FOV: 30° (0.524 radians)
+- Resolution: 0.5° horizontal, 0.5° vertical
+- Update Rate: 10Hz
+
+## Noise Parameters
+- Noise Type: Gaussian
+- Standard Deviation: 0.01m (1cm)
+- Bias: 0.0m
+- Outlier Ratio: 0.001%
+
+## Mounting Configuration
+- Position: [0.1, 0.0, 0.2] # relative to robot base
+- Orientation: [0.0, 0.0, 0.0] # roll, pitch, yaw in radians
+
+## Performance Parameters
+- Samples Per Second: 720000
+- Min Detection Range: 0.1m
+- Max Detection Range: 30.0m
+- Range Resolution: 0.01m
+
+## Output Format
+- Data Type: LaserScan (ROS 2)
+- Frame ID: "laser_frame"
+- Timestamp: synced with simulation time
