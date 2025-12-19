@@ -1,0 +1,27 @@
+# Environment Synchronization Scene
+
+This Unity scene shows how to synchronize the Unity environment with a Gazebo simulation:
+
+## Scene Components:
+- Coordinate system alignment with Gazebo
+- Data exchange protocols (ROS 2 bridge)
+- State synchronization between engines
+- Visual feedback for synchronization status
+
+## Key Features:
+- Transform synchronization (position, rotation)
+- Time synchronization
+- Physics state mirroring
+- Error correction mechanisms
+
+## Synchronization Setup:
+- Network connection to ROS 2 bridge
+- Message handlers for state updates
+- Interpolation for smooth visualization
+- Fallback systems for disconnections
+
+## Technical Details:
+- Uses Unity Robotics Package
+- Coordinate system: Right-handed (Unity) to left-handed (Gazebo)
+- Scale factor: 1 Unity unit = 1 meter (matching Gazebo)
+- Update rate: Matches Gazebo simulation step time

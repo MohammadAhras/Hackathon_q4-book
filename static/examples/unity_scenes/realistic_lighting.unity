@@ -1,0 +1,27 @@
+# Realistic Lighting Scene
+
+This Unity scene demonstrates advanced lighting techniques for digital twin environments:
+
+## Scene Components:
+- Environment with realistic textures
+- Multiple light sources (directional, point, spot)
+- Reflection probes for accurate reflections
+- Light cookies for complex shadow patterns
+
+## Key Features:
+- Physically-based rendering (PBR) materials
+- Real-time global illumination
+- Reflection and refraction effects
+- Advanced shadow settings
+
+## Lighting Setup:
+- Main directional light (sun/moon)
+- Ambient lighting
+- Fill lights for specific areas
+- Dynamic shadows
+
+## Technical Details:
+- Target platform: Desktop and WebGL
+- Lighting mode: Mixed
+- Real-time GI: Progressive GPU
+- Lightmapping: Progressive CPU

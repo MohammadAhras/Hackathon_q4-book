@@ -1,0 +1,37 @@
+# IMU Configuration Example
+
+## Sensor Specifications
+- Type: Inertial Measurement Unit
+- Update Rate: 100Hz
+- Measurement Range:
+  - Accelerometer: ±16g
+  - Gyroscope: ±2000 deg/s
+  - Magnetometer: ±4.8 Gauss (when present)
+
+## Noise Parameters
+### Accelerometer
+- Noise Density: 0.017 mg/rtHz (0.000166 m/s^2 / rtHz)
+- Bias Instability: 0.0004 m/s^2
+- Random Walk: 0.00004 m/s^2 / rt(s)
+
+### Gyroscope
+- Noise Density: 0.0012 deg/s / rtHz
+- Bias Instability: 0.000004 rad/s
+- Random Walk: 0.0000004 rad/s / rt(s)
+
+## Mounting Configuration
+- Position: [0.0, 0.0, 0.1] # relative to robot base
+- Orientation: [0.0, 0.0, 0.0] # roll, pitch, yaw in radians
+
+## Output Format
+- Data Type: Imu (ROS 2)
+- Linear Acceleration Covariance
+- Angular Velocity Covariance
+- Orientation Covariance
+- Frame ID: "imu_link"
+- Timestamp: synced with simulation time
+
+## Performance Parameters
+- Bandwidth: 100 Hz
+- Supply Voltage: 3.3V or 5V
+- Power Consumption: < 25mA

@@ -1,0 +1,34 @@
+# Depth Camera Configuration Example
+
+## Sensor Specifications
+- Type: RGB-D camera
+- Resolution: 640x480 pixels
+- Field of View: 60° horizontal
+- Frame Rate: 30Hz
+- Color Format: RGB8 or RGBA8
+- Depth Format: 32-bit float meters
+
+## Noise Parameters
+- Gaussian Noise: 0.001m (1mm) standard deviation
+- Random Walk: 0.0001m/s bias drift
+- Quantization Error: 0.001m
+
+## Calibration Parameters
+- Focal Length: [fx=320.0, fy=320.0]
+- Principal Point: [cx=320.0, cy=240.0]
+- Distortion Coefficients: [k1=-0.1, k2=0.1, p1=0.0, p2=0.0, k3=0.0]
+
+## Mounting Configuration
+- Position: [0.05, 0.0, 0.3] # relative to robot base
+- Orientation: [0.0, 0.0, 0.0] # roll, pitch, yaw in radians
+
+## Range Parameters
+- Minimum Distance: 0.1m
+- Maximum Distance: 10.0m
+- Depth Accuracy: ±1% of measured distance
+
+## Output Format
+- Image Topic: "/camera/rgb/image_raw"
+- Depth Topic: "/camera/depth/image_raw"
+- Camera Info Topic: "/camera/camera_info"
+- Frame ID: "camera_frame"
